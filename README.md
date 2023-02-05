@@ -28,5 +28,5 @@ const me = {
     ability : [js, html, css, bootstrap]
 }
 
-// Although I usually like web developing, 
+// Although I usually like web developing
 ```
