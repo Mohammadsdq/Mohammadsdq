@@ -43,7 +43,7 @@ More about me...
 ```js
 const Mohammad = {     
     pronouns: "He" | "Him",     
-    aboutMe: "I'm Node.js Developer from FronckTeam"
+    aboutMe: "I'm Node.js Developer from Varia"
     language: ["javaScript"] // Node.js,         
     myStack: {             
         backEnd: {             
