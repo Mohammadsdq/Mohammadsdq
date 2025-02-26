@@ -55,7 +55,7 @@ const Mohammad = {
           
         },         
         frontEnd: {             
-          web: ["I know very little about the front-end"],         
+          web: ["I know very little about the front-end, ,My friends call me a bug fixer => https://github.com/BehradHashemi 😂"],         
         },         
         gameServer: ["Fivem"],               
    },    
