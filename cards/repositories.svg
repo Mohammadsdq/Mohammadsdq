@@ -1,5 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="180" viewBox="0 0 1000 180">
-<rect x="1" y="1" width="998" height="178" rx="20" fill="#0B1220" stroke="#263750"/>
-<text x="32" y="70" fill="#F1F5F9" font-family="Arial" font-size="26" font-weight="700">Live GitHub data is waiting to be generated</text>
-<text x="32" y="108" fill="#9AAAC0" font-family="Arial" font-size="16">Add GH_TOKEN in repository secrets, then run the GitHub Actions workflow.</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="490" viewBox="0 0 1000 490" role="img" aria-label="Featured public repositories">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1220"/><stop offset="1" stop-color="#111C2E"/></linearGradient>
+ <linearGradient id="accent"><stop offset="0" stop-color="#60A5FA"/><stop offset=".55" stop-color="#22D3EE"/><stop offset="1" stop-color="#F472B6"/></linearGradient>
+ <style>
+ text{font-family:Inter,'Segoe UI',Arial,sans-serif}
+ .heading{font-size:23px;font-weight:700;fill:#F1F5F9}
+ .label{font-size:12px;font-weight:600;letter-spacing:2px;fill:#9AAAC0}
+ .value{font-size:30px;font-weight:750;fill:#F1F5F9}
+ .small{font-size:13px;fill:#9AAAC0}
+ .glow{animation:glow 4s ease-in-out infinite}
+ .sweep{animation:sweep 7s ease-in-out infinite}
+ @keyframes glow{0%,100%{opacity:.35}50%{opacity:.9}}
+ @keyframes sweep{0%,65%{transform:translateX(-260px);opacity:0}75%{opacity:.75}100%{transform:translateX(1200px);opacity:0}}
+ @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important}}
+ </style>
+</defs>
+<rect x="1" y="1" width="998" height="488" rx="20" fill="url(#bg)" stroke="#263750"/>
+<text x="30" y="40" class="heading">Featured repositories</text><a href="https://github.com/Mohammadsdq/InstagramBot"><rect x="26" y="53" width="948" height="55" rx="10" fill="#16243A" stroke="#263750"/><text x="44" y="75" font-size="16" font-weight="700" fill="#60A5FA">InstagramBot</text><text x="44" y="94" font-size="12" fill="#9AAAC0">This bot runs on your account and shows the date of each day in your biography.</text><text x="810" y="76" font-size="12" fill="#F1F5F9">★ 6 · Forks 0</text><text x="810" y="94" font-size="11" fill="#9AAAC0">Python</text></a><a href="https://github.com/Mohammadsdq/rock-paper-scissor"><rect x="26" y="118" width="948" height="55" rx="10" fill="#16243A" stroke="#263750"/><text x="44" y="140" font-size="16" font-weight="700" fill="#60A5FA">rock-paper-scissor</text><text x="44" y="159" font-size="12" fill="#9AAAC0">rock paper scissor mini game</text><text x="810" y="141" font-size="12" fill="#F1F5F9">★ 4 · Forks 1</text><text x="810" y="159" font-size="11" fill="#9AAAC0">JavaScript</text></a><a href="https://github.com/Mohammadsdq/HUD-status"><rect x="26" y="183" width="948" height="55" rx="10" fill="#16243A" stroke="#263750"/><text x="44" y="205" font-size="16" font-weight="700" fill="#60A5FA">HUD-status</text><text x="44" y="224" font-size="12" fill="#9AAAC0">HUD &amp; status</text><text x="810" y="206" font-size="12" fill="#F1F5F9">★ 4 · Forks 0</text><text x="810" y="224" font-size="11" fill="#9AAAC0">CSS</text></a><a href="https://github.com/Mohammadsdq/NavBar"><rect x="26" y="248" width="948" height="55" rx="10" fill="#16243A" stroke="#263750"/><text x="44" y="270" font-size="16" font-weight="700" fill="#60A5FA">NavBar</text><text x="44" y="289" font-size="12" fill="#9AAAC0">Basic navbar</text><text x="810" y="271" font-size="12" fill="#F1F5F9">★ 3 · Forks 0</text><text x="810" y="289" font-size="11" fill="#9AAAC0">CSS</text></a><a href="https://github.com/Mohammadsdq/login-form"><rect x="26" y="313" width="948" height="55" rx="10" fill="#16243A" stroke="#263750"/><text x="44" y="335" font-size="16" font-weight="700" fill="#60A5FA">login-form</text><text x="44" y="354" font-size="12" fill="#9AAAC0">login</text><text x="810" y="336" font-size="12" fill="#F1F5F9">★ 3 · Forks 0</text><text x="810" y="354" font-size="11" fill="#9AAAC0">CSS</text></a><a href="https://github.com/Mohammadsdq/LoginForm"><rect x="26" y="378" width="948" height="55" rx="10" fill="#16243A" stroke="#263750"/><text x="44" y="400" font-size="16" font-weight="700" fill="#60A5FA">LoginForm</text><text x="44" y="419" font-size="12" fill="#9AAAC0">Neomorphism Login form</text><text x="810" y="401" font-size="12" fill="#F1F5F9">★ 3 · Forks 0</text><text x="810" y="419" font-size="11" fill="#9AAAC0">CSS</text></a></svg>
