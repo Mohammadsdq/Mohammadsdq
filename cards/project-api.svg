@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="170" viewBox="0 0 440 170">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#101827"/><stop offset="1" stop-color="#17243A"/>
+  </linearGradient>
+  <linearGradient id="shine">
+    <stop offset="0" stop-color="#60A5FA" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#60A5FA" stop-opacity=".45"/>
+    <stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+  </linearGradient>
+  <style>
+    .eyebrow{font:600 14px 'Segoe UI',Arial,sans-serif;letter-spacing:3px;fill:#60A5FA}
+    .title{font:700 38px 'Segoe UI',Arial,sans-serif;fill:#F8FAFC}
+    .sub{font:400 17px 'Segoe UI',Arial,sans-serif;fill:#A9B7C9}
+    .orb{animation:pulse 3.5s ease-in-out infinite;transform-origin:780px 105px}
+    .shine{animation:slide 5s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:.35;transform:scale(.9)}50%{opacity:.9;transform:scale(1.08)}}
+    @keyframes slide{0%,65%{transform:translateX(-300px);opacity:0}75%{opacity:.8}100%{transform:translateX(950px);opacity:0}}
+    @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important}}
+  </style>
+</defs>
+<rect x="1" y="1" width="438" height="168" rx="22" fill="url(#bg)" stroke="#29384D"/>
+<circle class="orb" cx="780" cy="105" r="64" fill="#60A5FA" opacity=".14"/>
+<circle cx="780" cy="105" r="42" fill="none" stroke="#60A5FA" stroke-opacity=".55" stroke-width="1.5"/>
+<path d="M745 105h70M780 70v70" stroke="#60A5FA" stroke-opacity=".35"/>
+<text x="42" y="58" class="eyebrow">CURRENT LEARNING PROJECT</text>
+<text x="42" y="112" class="title">Backend API Practice</text>
+<text x="44" y="151" class="sub">CRUD · HTTP · Node.js · MongoDB</text>
+<rect class="shine" x="0" y="0" width="110" height="170" fill="url(#shine)"/>
+
+</svg>

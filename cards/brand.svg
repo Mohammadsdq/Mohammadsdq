@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="150" viewBox="0 0 360 150">
+<defs><style>
+.t{font:700 27px 'Segoe UI',Arial;fill:#F8FAFC;letter-spacing:2px}
+.s{font:14px 'Segoe UI',Arial;fill:#A9B7C9}
+.n{font:700 54px 'Segoe UI',Arial;fill:#F472B6;opacity:.18}
+@keyframes rise{0%{transform:translateY(12px);opacity:.3}100%{transform:translateY(0);opacity:1}}
+.g{animation:rise .8s ease-out both}
+@media(prefers-reduced-motion:reduce){.g{animation:none}}
+</style></defs>
+<rect x="1" y="1" width="358" height="148" rx="18" fill="#101827" stroke="#29384D"/>
+<rect x="1" y="1" width="5" height="148" rx="2" fill="#F472B6"/>
+<g class="g"><text x="25" y="53" class="t">BRAND</text><text x="25" y="84" class="s">VariaTeam · technology & experiments</text><text x="290" y="120" class="n">02</text></g>
+</svg>
