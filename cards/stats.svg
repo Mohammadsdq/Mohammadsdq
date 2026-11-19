@@ -1,19 +1,224 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="178" viewBox="0 0 1000 178" role="img" aria-label="GitHub statistics">
+<svg xmlns="http://www.w3.org/2000/svg"
+width="1000"
+height="178"
+viewBox="0 0 1000 178"
+role="img"
+aria-label="GitHub statistics">
+
 <defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1220"/><stop offset="1" stop-color="#111C2E"/></linearGradient>
- <linearGradient id="accent"><stop offset="0" stop-color="#60A5FA"/><stop offset=".55" stop-color="#22D3EE"/><stop offset="1" stop-color="#F472B6"/></linearGradient>
- <style>
- text{font-family:Inter,'Segoe UI',Arial,sans-serif}
- .heading{font-size:23px;font-weight:700;fill:#F1F5F9}
- .label{font-size:12px;font-weight:600;letter-spacing:2px;fill:#9AAAC0}
- .value{font-size:30px;font-weight:750;fill:#F1F5F9}
- .small{font-size:13px;fill:#9AAAC0}
- .glow{animation:glow 4s ease-in-out infinite}
- .sweep{animation:sweep 7s ease-in-out infinite}
- @keyframes glow{0%,100%{opacity:.35}50%{opacity:.9}}
- @keyframes sweep{0%,65%{transform:translateX(-260px);opacity:0}75%{opacity:.75}100%{transform:translateX(1200px);opacity:0}}
- @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important}}
- </style>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#0B1220"/>
+        <stop offset="1" stop-color="#111C2E"/>
+    </linearGradient>
+
+    <linearGradient id="accent">
+        <stop offset="0" stop-color="#60A5FA"/>
+        <stop offset=".55" stop-color="#22D3EE"/>
+        <stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+
+    <style>
+        text {
+            font-family: Inter, 'Segoe UI', Arial, sans-serif;
+        }
+
+        .heading {
+            font-size: 23px;
+            font-weight: 700;
+            fill: #F1F5F9;
+        }
+
+        .label {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            fill: #9AAAC0;
+        }
+
+        .value {
+            font-size: 30px;
+            font-weight: 750;
+            fill: #F1F5F9;
+        }
+
+        .small {
+            font-size: 13px;
+            fill: #9AAAC0;
+        }
+
+        .glow {
+            animation: glow 4s ease-in-out infinite;
+        }
+
+        .sweep {
+            animation: sweep 7s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { opacity: .35; }
+            50% { opacity: .9; }
+        }
+
+        @keyframes sweep {
+            0%, 65% {
+                transform: translateX(-260px);
+                opacity: 0;
+            }
+            75% { opacity: .75; }
+            100% {
+                transform: translateX(1200px);
+                opacity: 0;
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            *, *::before, *::after {
+                animation: none !important;
+            }
+        }
+    </style>
+
 </defs>
-<rect x="1" y="1" width="998" height="176" rx="20" fill="url(#bg)" stroke="#263750"/>
-<text x="30" y="39" class="heading">GitHub at a glance</text><rect x="30" y="58" width="220" height="91" rx="13" fill="#16243A" stroke="#263750"/><rect x="30" y="58" width="220" height="3" rx="1.5" fill="#60A5FA"/><text x="46" y="88" class="label">PUBLIC REPOS</text><text x="46" y="128" class="value">20</text><rect x="272" y="58" width="220" height="91" rx="13" fill="#16243A" stroke="#263750"/><rect x="272" y="58" width="220" height="3" rx="1.5" fill="#F472B6"/><text x="288" y="88" class="label">FOLLOWERS</text><text x="288" y="128" class="value">82</text><rect x="514" y="58" width="220" height="91" rx="13" fill="#16243A" stroke="#263750"/><rect x="514" y="58" width="220" height="3" rx="1.5" fill="#FBBF24"/><text x="530" y="88" class="label">STARS EARNED</text><text x="530" y="128" class="value">47</text><rect x="756" y="58" width="220" height="91" rx="13" fill="#16243A" stroke="#263750"/><rect x="756" y="58" width="220" height="3" rx="1.5" fill="#34D399"/><text x="772" y="88" class="label">CONTRIBUTIONS · 1Y</text><text x="772" y="128" class="value">92</text><text x="30" y="166" class="small">Public non-fork repositories scanned: 20 · Public forks received: 2</text></svg>
+
+<rect
+    x="1"
+    y="1"
+    width="998"
+    height="176"
+    rx="20"
+    fill="url(#bg)"
+    stroke="#263750"
+/>
+
+<text x="30" y="39" class="heading">GitHub at a glance</text>
+        <rect
+            x="30"
+            y="58"
+            width="220"
+            height="91"
+            rx="13"
+            fill="#16243A"
+            stroke="#263750"
+        />
+
+        <rect
+            x="30"
+            y="58"
+            width="220"
+            height="3"
+            rx="1.5"
+            fill="#60A5FA"
+        />
+
+        <text
+            x="46"
+            y="88"
+            class="label"
+        >PUBLIC REPOS</text>
+
+        <text
+            x="46"
+            y="128"
+            class="value"
+        >20</text>
+        
+        <rect
+            x="272"
+            y="58"
+            width="220"
+            height="91"
+            rx="13"
+            fill="#16243A"
+            stroke="#263750"
+        />
+
+        <rect
+            x="272"
+            y="58"
+            width="220"
+            height="3"
+            rx="1.5"
+            fill="#F472B6"
+        />
+
+        <text
+            x="288"
+            y="88"
+            class="label"
+        >FOLLOWERS</text>
+
+        <text
+            x="288"
+            y="128"
+            class="value"
+        >82</text>
+        
+        <rect
+            x="514"
+            y="58"
+            width="220"
+            height="91"
+            rx="13"
+            fill="#16243A"
+            stroke="#263750"
+        />
+
+        <rect
+            x="514"
+            y="58"
+            width="220"
+            height="3"
+            rx="1.5"
+            fill="#FBBF24"
+        />
+
+        <text
+            x="530"
+            y="88"
+            class="label"
+        >STARS EARNED</text>
+
+        <text
+            x="530"
+            y="128"
+            class="value"
+        >47</text>
+        
+        <rect
+            x="756"
+            y="58"
+            width="220"
+            height="91"
+            rx="13"
+            fill="#16243A"
+            stroke="#263750"
+        />
+
+        <rect
+            x="756"
+            y="58"
+            width="220"
+            height="3"
+            rx="1.5"
+            fill="#34D399"
+        />
+
+        <text
+            x="772"
+            y="88"
+            class="label"
+        >CONTRIBUTIONS · 1Y</text>
+
+        <text
+            x="772"
+            y="128"
+            class="value"
+        >94</text>
+        
+    <text x="30" y="166" class="small">
+        Public non-fork repositories scanned: 20
+        · Public forks received:
+        2
+    </text>
+    </svg>
