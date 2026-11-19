@@ -1,38 +1,66 @@
-# راه‌اندازی پروفایل GitHub
+# راه‌اندازی نسخه حرفه‌ای پروفایل Mohammadsdq
 
-این بسته یک شروع قابل‌استفاده بر اساس ایده مقاله Animated SVG Cards است:
-کارت‌ها SVG مستقل‌اند، README فقط آن‌ها را نمایش می‌دهد و انیمیشن‌ها داخل خود SVG قرار دارند.
+این نسخه با Python و GitHub GraphQL API داده‌های واقعی را دریافت می‌کند،
+پنج کارت SVG تولید می‌کند و GitHub Actions هر روز آن‌ها را به‌روزرسانی می‌کند.
 
-## نصب
+## خروجی‌ها
+- `cards/hero.svg`: نام، Bio و معرفی
+- `cards/stats.svg`: مخازن عمومی، Followers، مجموع ستاره‌ها و Contribution یک سال اخیر
+- `cards/activity.svg`: تقویم واقعی Contribution در ۳۶۵ روز گذشته
+- `cards/languages.svg`: زبان اصلی مخازن عمومی
+- `cards/repositories.svg`: شش مخزن عمومی برتر بر اساس ستاره
+- `data/github_stats.json`: داده خام دریافت‌شده از GitHub
 
-1. یک repository عمومی دقیقاً با نام `Mohammadsdq` بساز (اگر از قبل وجود دارد، همین فایل‌ها را داخل آن قرار بده).
-2. محتویات این پوشه را در ریشه repository آپلود کن.
-3. مطمئن شو فایل اصلی دقیقاً `README.md` باشد.
-4. به صفحه پروفایل `https://github.com/Mohammadsdq` برو و نتیجه را ببین.
+## ۱. Profile Repository
+در GitHub باید یک repository عمومی با نام دقیق `Mohammadsdq` داشته باشی.
+اگر از قبل ساخته‌ای، فایل‌های این پروژه را در همان repository قرار بده.
 
-## شخصی‌سازی
+## ۲. ساخت Token
+1. GitHub → Settings → Developer settings → Personal access tokens
+2. یک Fine-grained token بساز.
+3. دسترسی را حداقلی نگه دار؛ اطلاعات عمومی برای این نسخه کافی است.
+4. برای شمردن Contribution مخازن خصوصی، scope دسترسی `read:user` لازم است.
+5. توکن را کپی کن.
 
-- متن معرفی در `cards/hero.svg` است.
-- سه کارت BUILD / BRAND / LEARN در فایل‌های `cards/build.svg`، `cards/brand.svg` و `cards/learn.svg` هستند.
-- کارت‌های پروژه در `cards/project-api.svg` و `cards/project-task.svg` هستند.
-- چیدمان README در `README.md` است.
+**توکن را هرگز داخل کد، README یا فایل JSON قرار نده.**
 
-## نکته مهم درباره آمار
+## ۳. افزودن Secret
+در repository برو به:
+`Settings → Secrets and variables → Actions → New repository secret`
 
-نمودار فعلی صرفاً پیش‌نمایش بصری است و در خود تصویر هم همین موضوع نوشته شده؛
-هیچ تعداد commit، streak یا آمار ساختگی به پروفایل نسبت داده نشده است.
-برای نسخه کاملاً خودکارِ مقاله، باید منبع داده معتبر GitHub (معمولاً GraphQL با یک Personal Access Token محدود)
-به workflow اضافه شود و بعد اسکریپت نمودار را از داده واقعی تولید کند.
+نام را دقیقاً `GH_TOKEN` بگذار و مقدار را Token کپی‌شده قرار بده.
 
-## اجرای بررسی محلی
+## ۴. اجرای خودکار
+1. فایل‌ها را روی branch اصلی `main` push کن.
+2. در تب Actions اجرای Workflowها را فعال کن.
+3. Workflow با نام `Update GitHub profile cards` را باز کن.
+4. `Run workflow` را بزن.
+5. پس از اجرای موفق، کارت‌ها و `github_stats.json` به‌روز و commit می‌شوند.
+6. پس از آن هر روز ساعت 00:23 UTC اجرا می‌شود؛ GitHub ممکن است در زمان شلوغی اجرا را کمی عقب بیندازد.
 
-```bash
-python scripts/render_readme_cards.py
+## ۵. اجرای محلی (اختیاری)
+
+Windows PowerShell:
+```powershell
+$env:GH_TOKEN="YOUR_TOKEN"
+$env:GITHUB_USERNAME="Mohammadsdq"
+python scripts/generate_profile.py
 ```
 
-## قبل از انتشار
+Linux/macOS:
+```bash
+export GH_TOKEN="YOUR_TOKEN"
+export GITHUB_USERNAME="Mohammadsdq"
+python scripts/generate_profile.py
+```
 
-- اگر عنوان «Backend Developer» برای سطح فعلی‌ات اغراق‌آمیز است، متن فعلی عمداً از
-  «Learning ... as a ... backend developer» استفاده می‌کند.
-- کارت پروژه‌ها به پروژه‌هایی اشاره می‌کنند که در مسیر یادگیری‌ات ساخته‌ای؛ لینک آن‌ها فعلاً به پروفایل می‌رود.
-  بعد از push کردن repositoryهای واقعی، لینک هر کارت را در README به آدرس دقیق پروژه تغییر بده.
+Python 3.10+ کافی است و هیچ dependency خارجی لازم نیست.
+
+## نکات دقت
+- Contribution از `contributionsCollection.contributionCalendar` خوانده می‌شود.
+- تعداد مخازن، Followers و Following از GraphQL می‌آید.
+- ستاره‌ها و Forkها از مخازن عمومی غیر Fork که مالکشان حساب کاربر است محاسبه می‌شوند.
+- اسکن مخازن برای ستاره و زبان تا سقف ۱۰۰۰ مخزن است؛ بالاتر از آن این آمار ممکن است ناقص شود.
+- نمودار زبان بر اساس زبان اصلی هر repository است، نه ساعت واقعی برنامه‌نویسی.
+- انیمیشن‌ها با `prefers-reduced-motion` غیرفعال می‌شوند.
+- Workflow فقط کارت‌ها و JSON را commit می‌کند.

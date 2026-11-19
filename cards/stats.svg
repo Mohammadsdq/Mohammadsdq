@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="180" viewBox="0 0 1000 180">
+<rect x="1" y="1" width="998" height="178" rx="20" fill="#0B1220" stroke="#263750"/>
+<text x="32" y="70" fill="#F1F5F9" font-family="Arial" font-size="26" font-weight="700">Live GitHub data is waiting to be generated</text>
+<text x="32" y="108" fill="#9AAAC0" font-family="Arial" font-size="16">Add GH_TOKEN in repository secrets, then run the GitHub Actions workflow.</text>
+</svg>
