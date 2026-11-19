@@ -18,5 +18,4 @@
 <a href="https://VariaTeam.ir">
 <img src="https://img.shields.io/badge/VariaTeam-Visit-0F766E?style=flat-square&logo=googlechrome&logoColor=white" alt="VariaTeam">
 </a>
-<sub>Stats and cards generated with Python · Updated daily by GitHub Actions</sub>
 </div>
