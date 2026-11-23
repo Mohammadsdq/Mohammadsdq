@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-22T07:08:31.283148+00:00",
+  "generated_at": "2026-11-23T07:54:48.759795+00:00",
   "username": "Mohammadsdq",
   "period": {
-    "from": "2025-11-23",
-    "to": "2026-11-22"
+    "from": "2025-11-24",
+    "to": "2026-11-23"
   },
   "public_repository_count": 20,
   "scanned_repository_count": 20,
   "followers": 82,
   "following": 86,
-  "total_contributions": 105,
+  "total_contributions": 107,
   "repositories": [
     {
       "name": "InstagramBot",
@@ -233,16 +233,10 @@
     }
   ],
   "contribution_calendar": {
-    "totalContributions": 105,
+    "totalContributions": 107,
     "weeks": [
       {
         "contributionDays": [
-          {
-            "date": "2025-11-23",
-            "contributionCount": 0,
-            "color": "#ebedf0",
-            "weekday": 0
-          },
           {
             "date": "2025-11-24",
             "contributionCount": 0,
@@ -2631,9 +2625,15 @@
         "contributionDays": [
           {
             "date": "2026-11-22",
+            "contributionCount": 2,
+            "color": "#9be9a8",
+            "weekday": 0
+          },
+          {
+            "date": "2026-11-23",
             "contributionCount": 0,
             "color": "#ebedf0",
-            "weekday": 0
+            "weekday": 1
           }
         ]
       }
