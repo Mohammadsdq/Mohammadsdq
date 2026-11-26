@@ -152,7 +152,7 @@ aria-label="GitHub statistics">
             x="288"
             y="128"
             class="value"
-        >82</text>
+        >83</text>
         
         <rect
             x="514"
@@ -214,7 +214,7 @@ aria-label="GitHub statistics">
             x="772"
             y="128"
             class="value"
-        >125</text>
+        >130</text>
         
     <text x="30" y="166" class="small">
         Public non-fork repositories scanned: 20

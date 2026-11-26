@@ -97,23 +97,9 @@ aria-label="GitHub contribution calendar">
     </text>
 
     <text x="28" y="61" class="small">
-        125 contributions in the last year
+        130 contributions in the last year
     </text>
     
-            <rect
-                x="30"
-                y="127"
-                width="11"
-                height="11"
-                rx="2.5"
-                fill="#ebedf0"
-            >
-                <title>
-                    2025-11-26:
-                    0 contributions
-                </title>
-            </rect>
-            
             <rect
                 x="30"
                 y="142"
@@ -5202,11 +5188,25 @@ aria-label="GitHub contribution calendar">
                 width="11"
                 height="11"
                 rx="2.5"
-                fill="#40c463"
+                fill="#216e39"
             >
                 <title>
                     2026-11-25:
-                    6 contributions
+                    10 contributions
+                </title>
+            </rect>
+            
+            <rect
+                x="810"
+                y="142"
+                width="11"
+                height="11"
+                rx="2.5"
+                fill="#9be9a8"
+            >
+                <title>
+                    2026-11-26:
+                    1 contributions
                 </title>
             </rect>
             <text x="30" y="207" class="small">Less</text>
